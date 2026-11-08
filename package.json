@@ -1,0 +1,20 @@
+{
+  "name": "splendid-spld-devnet-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Guarded Devnet-only SPLD mint and verification scripts",
+  "scripts": {
+    "preflight": "node scripts/preflight.mjs",
+    "create:devnet": "node scripts/create-devnet-mint.mjs",
+    "verify:devnet": "node scripts/verify-devnet-mint.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@solana/spl-token": "0.4.14",
+    "@solana/web3.js": "1.98.4",
+    "dotenv": "16.4.7"
+  }
+}
